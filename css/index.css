@@ -1026,6 +1026,9 @@ footer > *:nth-child(6), footer > *:nth-child(7){
 #goog-gt-tt{
     display: none;
 }
+.goog-logo-link img{
+    display: none !important;
+}
 
 @media only screen and (max-width:1210px) {
 
