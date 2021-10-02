@@ -169,7 +169,7 @@ body {
 *:focus,
 *:before,
 *:after {
-    transition: 0.5s ease
+    transition: 0.4s ease
 }
 
 *:focus {
@@ -185,16 +185,16 @@ a:visited {
 }
 
 ::-webkit-scrollbar {
-    width: 0.8%;
-    background: none;
+    width: 0.8vw;
+    z-index: 10;
 }
 
 ::-webkit-scrollbar-track {
-    background: none;
+    background: var(--page-gradient, rgb(252,252,252));
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--semitransparent-color--primary, rgb(252,252,252));
+    background: var(--semitransparent-color--tertiary, rgb(252,252,252));
     border-radius: var(--border-radius--bgst, 20px);
 }
 
@@ -576,7 +576,7 @@ footer > *:nth-child(6), footer > *:nth-child(7){
 }
 
 .menu--hormenu > .hormenu__elem li {
-    top: 34%;
+    top: 12%;
     background: var(--semitransparent-color--primary);
 }
 
@@ -1078,6 +1078,9 @@ footer > *:nth-child(6), footer > *:nth-child(7){
         height: 0;
         width: 0;
     }
+    ::-webkit-scrollbar{
+        display: none;
+    }
 
     #page {
         flex-flow: column nowrap;
@@ -1114,7 +1117,7 @@ footer > *:nth-child(6), footer > *:nth-child(7){
         height: 100%;
         align-self: center;
         background: var(--semitransparent-color--primary);
-        color: var(--font-color--quarterary, #fff);
+        color: var(--font-color--secondary, #fff);
         width: 25%;
         font: 700 14px/1 'PoiretOne';
         padding: 5px;
@@ -1126,7 +1129,7 @@ footer > *:nth-child(6), footer > *:nth-child(7){
     #mobile-menu .mobile-menu__button.pressed {
         background: var(--color--secondary);
         border-radius: var(--border-radius--sm);
-        color: #f5f5f5;
+        color: var(--font-color--quarterary);
     }
 
     #mobile-menu a:hover {
